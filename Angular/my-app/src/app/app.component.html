@@ -1,0 +1,9 @@
+<div class="outer-wrapper">
+  <p>Counter Sample - Angular</p>
+  <span class={{this.getCounterClass()}}>{{counter}}</span>
+  <div>
+    <button class="btn btn-info btn-sm" (click)="this.onDecrement()">Decrement</button>
+    <button class="btn btn-light btn-sm inc-btn" (click)="this.onReset()">Reset</button>
+    <button class="btn btn-success btn-sm inc-btn" (click)="this.onIncrement()">Increment</button>
+  </div>
+</div>

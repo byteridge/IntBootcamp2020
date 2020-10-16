@@ -1,0 +1,27 @@
+<script>
+function add()
+{
+    var a=parseInt(document.getElementById("num1").value);
+    var b=parseInt(document.getElementById("num2").value);
+    var c=a+b;
+    document.getElementById("result").innerHTML=c;
+}
+</script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+<script >
+    $(document).ready(function(){
+        $("#b1").click(function(){
+            var a=parseInt($("#num1").val());
+            var b=parseInt($("#num2").val());
+            var c=a+b;
+            $("#result").text(c);
+        });
+    });
+</script>
+
+
+
+<input type="text" id="num1" /><br/><br/>
+<input type="text" id="num2"/><br/><br/>
+<input type="button" id="b1" value="Add" /><br/><br/>
+<p id="result"></p>
